@@ -1,0 +1,17 @@
+
+.container {
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section {
+    flex: 1; /* ocupa a largura maxima do elemento pai */
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem; /* espaçamento entre as colunas, nesse caso 6.25 x 16px = 100px */
+    align-content: center; /* o conteudo do grid vai ser alinhado ao centro verticalmente */
+}

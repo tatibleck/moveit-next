@@ -1,0 +1,58 @@
+** npx create-next-app nomedoapp **
+  cria o projeto em next.js
+
+já dentro da pasta do projeto:
+  ** yarn add typescript @types/react @types/react-dom @types/node -D **
+    instala o typescript, as tipagens da biblioteca React, as tipagens da biblioteca React DOM pro browser e as tipagens do Node
+    -D instala como dependências APENAS PRO PROJETO, apenas no ambiente dev. elas não são necessárias em produção pois ja vai estar em JS
+
+depois da instalação concluida, dentro do terminal do vscode ou dentro da pasta do projeto:
+  ** yarn dev **
+    pra rodar o projeto na porta 3000
+    http://localhost:3000/
+
+
+**********************************************************************************************************************************************************
+
+
+** Componentes (component) **
+  permitem dividir a UI em partes independentes, reutilizáveis e pensar em cada parte isoladamente
+
+
+** Estado (state) ** 
+  É todo dado que varia com o tempo (valores dinâmicos). Essa mudança de valor pode, ou não, ser fruto da interação do usuário com a aplicação. 
+  Ele é uma propriedade do componente onde colocamos dados que, quando mudados, devem causar uma nova renderização. 
+  Ou seja: se deve causar mudança fica no estado, se não deve, não fica.
+
+
+** Props **
+  São os valores que um componente recebe do ‘componente pai’. São como argumentos de uma função.
+  São utilizadas para passar valores entre componentes.
+
+
+** Contextos (Context API) **
+  Formas de compartilharmos informação entre os componentes do React
+
+
+** useState **
+  funcionalidade para definir estados dentro de um componente
+  ela retorna um array com duas posições: variavel em si e a função pra atualizar seu valor */
+
+
+** useEffect **
+  Estado de "efeito colateral". Quando algo mudar na minha aplicação a função do useEffect é executada
+  Seu primeiro parâmetro é "o que eu quero executar?" que é sempre uma função
+  O segundo parâmetro é "quando eu quero executar isso?"
+
+
+
+*********************************************************************************************************************************************************
+
+
+** import Head from 'next/head' **
+  essa tag coloca tudo o que estiver dentro dela no Head do HTML como, por exemplo, as fontes
+
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap" rel="stylesheet" /> 
+      </Head>

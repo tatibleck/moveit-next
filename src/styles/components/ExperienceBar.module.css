@@ -1,0 +1,36 @@
+/* 
+  * o Next possui um modo de deixar o css para um unico componente sem afetar o restante que é o css module
+   * se eu tentar utilizar a mesma classe em elementos diferente o Next não vai deixar
+    * deve-se usar CamelCase nas classes dos arquivos Modules
+*/
+
+.experienceBar {
+    display: flex;
+    align-items: center;
+}
+
+.experienceBar span {
+   font-size: 1rem; 
+}
+
+.experienceBar > div { /* pega somente a primeira div dentro do elemento */
+    flex: 1; /* ocupa a largura maxima do elemento pai */
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line); 
+    /* essa variavel veio do css global */
+    margin: 0 1.5rem;
+    position: relative;
+ }
+
+ .experienceBar > div > div {
+     height: 4px;
+     border-radius: 4px;
+     background: var(--green);
+ }
+
+ span.currentExperience {
+     position: absolute;
+     top: 12px;
+     transform: translateX(-50%);
+ }
